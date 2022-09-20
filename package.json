@@ -1,12 +1,12 @@
 {
-   "name": "Hermit-md",
+   "name": "wickie-md",
    "version": "4.3.0",
-   "description": "Hermit-md - Simple whatsapp Multi Device bot based on @adiwajshing/baileys.",
+   "description": "wikie-md - Simple whatsapp Multi Device bot based on @adiwajshing/baileys.",
    "main": "index.js",
    "scripts": {
       "start": "pm2 start . --attach --name ⛦"
    },
-   "author": "A-d-i-t-h-y-a-n",
+   "author": "abd-khadher1234",
    "license": "ISC",
    "dependencies": {
       "@adiwajshing/baileys": "git+https://github.com/A-d-i-t-h-y-a-n/Baileys.git",
