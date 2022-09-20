@@ -1,0 +1,2 @@
+# Wickie-MD
+SIMPLE WHATSAPP BOT
