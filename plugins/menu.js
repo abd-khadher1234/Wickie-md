@@ -53,7 +53,7 @@ Function({
 		msg += `│ 「 *${await Fancy(command.toUpperCase(), 32)}* 」 `
 		msg += `┕┬━━━━━━━━━━━━━━━━━━━━\n┌┤\n`
 		for (const plugin of commandslist[command])
-			msg += `││◦➛ ${await Fancy(plugin.toLowerCase(), 32)}\n`
+			msg += `││•=• ${await Fancy(plugin.toLowerCase(), 32)}\n`
 		msg += `│┕━━━━━━━━━━━━━━━━━━━━━
 `
 		msg += `┕━━━━━━━━━━━━━━━━━━━━━
@@ -79,9 +79,9 @@ Function({
 				type: 1
 			},
 			{
-				buttonId: prefix + 'list',
+				buttonId: prefix + 'owner',
 				buttonText: {
-					displayText: 'List Commands'
+					displayText: 'owner'
 				},
 				type: 1
 			}
