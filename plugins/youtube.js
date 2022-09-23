@@ -30,7 +30,7 @@ Function({
 		let media = await yta('https://youtu.be/' + ytId[1], '128kbps')
 		let thumb = await getBuffer(media.thumb)
 		if (media.filesize >= 10000) return await sendwithLinkpreview(client, m, media.dl_link, 'https://www.youtube.com/watch?v=' + ytId[1])
-				let writer = await addAudioMetaData(await getBuffer(media.dl_link), thumb, media.title, `${config.BOT_INFO.split(";")[0]}`, 'Hermit Official')
+				let writer = await addAudioMetaData(await getBuffer(media.dl_link), thumb, media.title, `${config.BOT_INFO.split(";")[0]}`, 'Wickie Official')
 				await sendwithLinkpreview(client, m, writer, 'https://www.youtube.com/watch?v=' + ytId[1])
 		return;
 	}
