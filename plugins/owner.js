@@ -1,4 +1,4 @@
-const { Function, getBuffer } = require('../lib/')
+const { Function, isPublic,getBuffer } = require('../lib/')
 const { generateWAMessage, proto } = require('@adiwajshing/baileys');
 const image = 'https://i.imgur.com/XAOymru.jpeg' //MAIN IMAGE URL HERE
 const logo = 'https://i.imgur.com/0CSP79W.png'
@@ -6,7 +6,7 @@ const logo = 'https://i.imgur.com/0CSP79W.png'
 Function(
 	{
 		pattern: 'owner ?(.*)',
-		fromMe: true,
+		fromMe: isPublic,
 		desc: 'Shows My Intro',
 		type: 'misc',
 	},   async (message, match) => {
