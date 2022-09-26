@@ -6,7 +6,7 @@ Function (
 		pattern: 'piceditor ?(.*)',
 		fromMe: isPublic,
 		desc: 'photo editer menu',
-		type: 'misc',
+		type: 'piceditor',
 	},async (message, match) => { 
 let msg = '```'
 await message.send(msg +`═════════════════════════════
@@ -45,7 +45,7 @@ Function(
 		pattern: 'ads ?(.*)',
 		fromMe: isPublic,
 		desc: 'photo as advertised',
-		type: 'misc',
+		type: 'piceditor',
 	},async (message, match) => {
 try{
 if (
@@ -65,7 +65,7 @@ Function(
 		pattern: 'pixelate ?(.*)',
 		fromMe: isPublic,
 		desc: 'photo blur',
-		type: 'misc',
+		type: 'piceditor',
 	},async (message, match) => {
 try{
 if (
@@ -86,7 +86,7 @@ Function(
 		pattern: 'horny ?(.*)',
 		fromMe: isPublic,
 		desc: 'pic editor',
-		type: 'misc',
+		type: 'piceditor',
 	},async (message, match) => {
 try{
 if (
@@ -106,7 +106,7 @@ Function(
 		pattern: 'rainbo ?(.*)',
 		fromMe: isPublic,
 		desc: 'rainbow effect',
-		type: 'misc',
+		type: 'piceditor',
 	},async (message, match) => {
 try{
 if (
@@ -126,7 +126,7 @@ Function(
 		pattern: 'bw ?(.*)',
 		fromMe: isPublic,
 		desc: 'black and white effect',
-		type: 'misc',
+		type: 'piceditor',
 	},async (message, match) => {
 try{
 if (
@@ -146,7 +146,7 @@ Function(
 		pattern: 'bright ?(.*)',
 		fromMe: isPublic,
 		desc: 'brighten image',
-		type: 'misc',
+		type: 'piceditor',
 	},async (message, match) => {
 try{
 if (
@@ -166,7 +166,7 @@ Function(
 		pattern: 'red ?(.*)',
 		fromMe: isPublic,
 		desc: 'red effect',
-		type: 'misc',
+		type: 'piceditor',
 	},async (message, match) => {
 try{
 if (
@@ -186,7 +186,7 @@ Function(
 		pattern: 'blue ?(.*)',
 		fromMe: isPublic,
 		desc: 'blue effect',
-		type: 'misc',
+		type: 'piceditor',
 	},async (message, match) => {
 try{
 if (
@@ -206,7 +206,7 @@ Function(
 		pattern: 'green ?(.*)',
 		fromMe: isPublic,
 		desc: 'green effect',
-		type: 'misc',
+		type: 'piceditor',
 	},async (message, match) => {
 try{
 if (
@@ -226,7 +226,7 @@ Function(
 		pattern: 'gay ?(.*)',
 		fromMe: isPublic,
 		desc: 'vibgyor',
-		type: 'misc',
+		type: 'piceditor',
 	},async (message, match) => {
 try{
 if (
@@ -246,7 +246,7 @@ Function(
 		pattern: 'passed ?(.*)',
 		fromMe: isPublic,
 		desc: 'mission passed effect',
-		type: 'misc',
+		type: 'piceditor',
 	},async (message, match) => {
 try{
 if (
@@ -265,7 +265,7 @@ Function(
 		pattern: 'wasted ?(.*)',
 		fromMe: isPublic,
 		desc: 'wasted effect',
-		type: 'misc',
+		type: 'piceditor',
 	},async (message, match) => {
 try{
 if (
@@ -285,7 +285,7 @@ Function(
 		pattern: 'glass ?(.*)',
 		fromMe: isPublic,
 		desc: 'glass effect',
-		type: 'misc',
+		type: 'piceditor',
 	},async (message, match) => {
 try{
 if (
@@ -305,7 +305,7 @@ Function(
 		pattern: 'uncover ?(.*)',
 		fromMe: isPublic,
 		desc: 'pic as uncovered',
-		type: 'misc',
+		type: 'piceditor',
 	},async (message, match) => {
 try{
 if (
@@ -326,7 +326,7 @@ Function(
 		pattern: 'jail ?(.*)',
 		fromMe: isPublic,
 		desc: 'picture in jail',
-		type: 'misc',
+		type: 'piceditor',
 	},async (message, match) => {
 try{
 if (
@@ -345,7 +345,7 @@ Function(
 		pattern: 'invert ?(.*)',
 		fromMe: isPublic,
 		desc: 'pic editor',
-		type: 'misc',
+		type: 'piceditor',
 	},async (message, match) => {
 try{
 if (
@@ -365,7 +365,7 @@ Function(
 		pattern: '2invert ?(.*)',
 		fromMe: isPublic,
 		desc: 'pic editor',
-		type: 'misc',
+		type: 'piceditor',
 	},async (message, match) => {
 try{
 if (
@@ -385,7 +385,7 @@ Function(
 		pattern: 'comrade ?(.*)',
 		fromMe: isPublic,
 		desc: 'comrade effect',
-		type: 'misc',
+		type: 'piceditor',
 	},async (message, match) => {
 try{
 if (
@@ -405,7 +405,7 @@ Function(
 		pattern: 'golden ?(.*)',
 		fromMe: isPublic,
 		desc: 'change main colours to gold',
-		type: 'misc',
+		type: 'piceditor',
 	},async (message, match) => {
 try{
 if (
@@ -425,7 +425,7 @@ Function(
 		pattern: 'simpcard ?(.*)',
 		fromMe: isPublic,
 		desc: 'photo in simpcard',
-		type: 'misc',
+		type: 'piceditor',
 	},async (message, match) => {
 try{
 if (
@@ -445,7 +445,7 @@ Function(
 		pattern: 'threshold ?(.*)',
 		fromMe: isPublic,
 		desc: 'darken bg',
-		type: 'misc',
+		type: 'piceditor',
 	},async (message, match) => {
 try{
 if (
@@ -465,7 +465,7 @@ Function(
 		pattern: 'clown ?(.*)',
 		fromMe: isPublic,
 		desc: 'clown model',
-		type: 'misc',
+		type: 'piceditor',
 	},async (message, match) => {
 try{
 if (
