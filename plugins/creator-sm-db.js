@@ -15,7 +15,7 @@ Function({
 	pattern: 'text ?(.*)',
 	fromMe: isPublic,
 	desc: 'Sends text',
-	type: 'misc',
+	type: 'creator',
 }, async (message, match) => {
 	await message.send("*TEXT HERE*")
 });
@@ -28,7 +28,7 @@ Function({
 	pattern: 'image ?(.*)',
 	fromMe: isPublic,
 	desc: 'Sends image',
-	type: 'misc',
+	type: 'creator',
 }, async (message, match) => {
 	await message.client.sendMessage(message.chat, {image: {url: 'https://i.imgur.com/biqxAoi.jpeg'}, caption: "abd_khadher"})
 });
@@ -41,7 +41,7 @@ Function({
 	pattern: 'video ?(.*)',
 	fromMe: isPublic,
 	desc: 'Sends video',
-	type: 'misc',
+	type: 'creator',
 }, async (message, match) => {
 	await message.client.sendMessage(message.chat, {video: {url: 'https://i.imgur.com/NCifJWe.mp4'}, caption: "abd_khadher"})
 });
@@ -55,7 +55,7 @@ Function({
 	pattern: 'mentiontext ?(.*)',
 	fromMe: isPublic,
 	desc: 'Sends mention text',
-	type: 'misc',
+	type: 'creator',
 }, async (message, match) => {
 
 await message.client.sendMessage(message.chat, { text: `*MENTION :* @${message.sender.split("@")[0]}`, mentions: [message.sender] })
@@ -70,7 +70,7 @@ Function({
 	pattern: 'reaction ?(.*)',
 	fromMe: isPublic,
 	desc: 'Sends reaction',
-	type: 'misc',
+	type: 'creator',
 }, async (message, match) => {
 	const reactionMessage = {
     react: {
@@ -90,7 +90,7 @@ Function({
 	pattern: 'listbutton ?(.*)',
 	fromMe: isPublic,
 	desc: 'Sends list button',
-	type: 'misc',
+	type: 'creator',
 }, async (message, match) => {
 
 const sections = [
@@ -130,7 +130,7 @@ Function({
 	pattern: 'buttontext ?(.*)',
 	fromMe: isPublic,
 	desc: 'Sends button text',
-	type: 'misc',
+	type: 'creator',
 }, async (message, match) => {
 
 const buttons = [
@@ -159,7 +159,7 @@ Function({
 	pattern: 'buttonimage ?(.*)',
 	fromMe: isPublic,
 	desc: 'Sends button image',
-	type: 'misc',
+	type: 'creator',
 }, async (message, match) => {
 
 const buttons = [
@@ -188,7 +188,7 @@ Function({
 	pattern: 'buttonvideo ?(.*)',
 	fromMe: isPublic,
 	desc: 'Sends button video',
-	type: 'misc',
+	type: 'creator',
 }, async (message, match) => {
 
 const buttons = [
@@ -217,7 +217,7 @@ Function({
 	pattern: 'templatebuttontext ?(.*)',
 	fromMe: isPublic,
 	desc: 'Sends template button text',
-	type: 'misc',
+	type: 'creator',
 }, async (message, match) => {
 
 const templateButtons = [
@@ -244,7 +244,7 @@ Function({
 	pattern: 'templatebuttonimage ?(.*)',
 	fromMe: isPublic,
 	desc: 'Sends template button image',
-	type: 'misc',
+	type: 'creator',
 }, async (message, match) => {
 
 const templateButtons = [
@@ -271,7 +271,7 @@ Function({
 	pattern: 'templatebuttonvideo ?(.*)',
 	fromMe: isPublic,
 	desc: 'Sends template button video',
-	type: 'misc',
+	type: 'creator',
 }, async (message, match) => {
 
 const templateButtons = [
@@ -300,7 +300,7 @@ Function({
 	pattern: 'contact ?(.*)',
 	fromMe: isPublic,
 	desc: 'Sends contact',
-	type: 'misc',
+	type: 'creator',
 }, async (message, match) => {
 
 const vcard = 'BEGIN:VCARD\n' // metadata of the contact card
@@ -329,7 +329,7 @@ Function({
 	pattern: 'location ?(.*)',
 	fromMe: isPublic,
 	desc: 'Sends location',
-	type: 'misc',
+	type: 'creator',
 }, async (message, match) => {
 
 await message.client.sendMessage(
