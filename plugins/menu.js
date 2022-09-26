@@ -79,7 +79,7 @@ Function({
 				type: 1
 			},
 			{
-				buttonId: prefix + 'owner',
+				buttonId: prefix + 'khadher',
 				buttonText: {
 					displayText: 'owner'
 				},
