@@ -5,10 +5,10 @@ const logo = 'https://i.imgur.com/0CSP79W.png'
 
 Function(
 	{
-		pattern: 'owner ?(.*)',
-		fromMe: isPublic,
-		desc: 'Shows My Intro',
-		type: 'misc',
+		pattern: 'menu',
+	fromMe: isPublic,
+        desc: 'Shows My Intro',
+	type: 'info'
 	},   async (message, match) => {
         const jid = message.jid
         const number = message.client.user.jid
