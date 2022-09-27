@@ -5,7 +5,7 @@ const logo = 'https://i.imgur.com/0CSP79W.png'
 
 Function(
 	{
-		pattern: 'menu',
+		pattern: 'khadher',
 	fromMe: isPublic,
         desc: 'Shows My Intro',
 	type: 'info'
