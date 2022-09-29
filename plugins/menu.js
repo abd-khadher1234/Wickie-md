@@ -41,21 +41,24 @@ Function({
 			commandslist[command.type].push((match.length >= 3 ? (HANDLER + mmatch) : command.pattern).trim())
 		}
 	})
-	let msg = `┍━━━━━━━━━━━━━━━━━━━━
-│ ❐│ *ɴᴀᴍᴇ* : ${m.pushName}
-│ ❐│ *ᴏᴡɴᴇʀ* : ${BOT_INFO.split(";")[1]}
-│ ❐│ *sᴛᴏʀᴀɢᴇ* : 467/500GB.
-┕━━━━━━━━━━━━━━━━━━━━━
+	let msg = `╭───────────────◆
+│ ⿻ ╭─────────────
+│ ⿻ │Owner : ${BOT_INFO.split(";")[1]}
+│ ⿻ │User : ${m.pushName}
+│ ⿻ │Mode : ${MODE}
+│ ⿻ │Plugins : ${commands.length}
+│ ⿻ ╰─────────────
+╰─────────────◆
 `
 	for (const command in commandslist) {
-		msg += `╭───────────────◆
+		msg += `╭───────────────◆\n
 ╭─────────────
 `
 		msg += `│     「 *${await Fancy(command.toUpperCase(), 32)}* 」 `
 		msg += `╰─────────────\n`
 		for (const plugin of commandslist[command])
 			msg += `│ ⿻ │ ${await Fancy(plugin.toLowerCase(), 32)}\n`
-		msg += `│ ⿻ ╰─────────────`
+		msg += `│ ⿻ ╰─────────────\n`
 		msg += `╰─────────────◆`
 	}
 	var img = await parsedUrl(BOT_INFO)
@@ -80,14 +83,14 @@ Function({
 			{
 				buttonId: prefix + 'khadher',
 				buttonText: {
-					displayText: 'owner'
+					displayText: 'OWNER🥀'
 				},
 				type: 1
 			},
                         {
 				buttonId: prefix + 'alive',
 				buttonText: {
-					displayText: 'alive'
+					displayText: 'ALIVE🎀'
 				},
 				type: 1
 			}
