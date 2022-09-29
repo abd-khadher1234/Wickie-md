@@ -49,17 +49,14 @@ Function({
 `
 	for (const command in commandslist) {
 		msg += `╭───────────────◆
-│ ⿻ ╭─────────────
+╭─────────────
 `
-		msg += `│ 「 *${await Fancy(command.toUpperCase(), 32)}* 」 `
-		msg += `│ ⿻ ╰─────────────\n┌┤\n`
+		msg += `│     「 *${await Fancy(command.toUpperCase(), 32)}* 」 `
+		msg += `╰─────────────\n`
 		for (const plugin of commandslist[command])
 			msg += `│ ⿻ │ ${await Fancy(plugin.toLowerCase(), 32)}\n`
-		msg += `│ ⿻ ╰─────────────\
-`
-		msg += `│ ⿻ ╰─────────────
-╰─────────────◆
-`
+		msg += `│ ⿻ ╰─────────────`
+		msg += `╰─────────────◆`
 	}
 	var img = await parsedUrl(BOT_INFO)
 	if (img.length == 0) {
