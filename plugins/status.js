@@ -3,14 +3,12 @@ Function({pattern: 'status ?(.*)', fromMe: isPublic, desc: 'random malayalam sta
 let { result} = await getJson ('https://raw.githubusercontent.com/mask-sir/api.mask-ser/main/Sts.json')
 let mask = result[Math.floor(Math.random()*result.length)]
 const buttons = [
-  {buttonId: prefix + 'status', buttonText: {displayText: 'NEXT➡️'} type: 1},
-  {buttonId: prefix + 'alive', buttonText: {displayText: 'ALIVE💐'} type: 1},
-  {buttonId: prefix + 'menu', buttonText: {displayText: 'MENU👅'} type: 1}]
+  {buttonId: prefix + 'status', buttonText: {displayText: 'next'}, type: 1}]
 
 const buttonMessage = {
     video: {url: mask},
     caption: "*Random Malayalam Status*",
-    footer: 'abd_khadher👅❤️',
+    footer: 'abd_khadher👀👅',
     buttons: buttons,
     headerType: 4
 }
