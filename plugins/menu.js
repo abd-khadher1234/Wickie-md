@@ -41,25 +41,23 @@ Function({
 			commandslist[command.type].push((match.length >= 3 ? (HANDLER + mmatch) : command.pattern).trim())
 		}
 	})
-	let msg = `╭───────────────◆
+	let msg = `╭─────〘 ${BOT_INFO.split(";")[0] 〙────◆
 │ ⿻ ╭─────────────
-│ ⿻ │Owner : ${BOT_INFO.split(";")[1]}
 │ ⿻ │User : ${m.pushName}
+│ ⿻ │Owner : ${BOT_INFO.split(";")[1]}
 │ ⿻ │Mode : ${MODE}
-│ ⿻ │Plugins : ${commands.length}
+│ ⿻ │commands : ${commands.length}
 │ ⿻ ╰─────────────
-╰─────────────◆
-`
+╰─────────────◆\n\n`
 	for (const command in commandslist) {
 		msg += `╭───────────────◆\n
-╭─────────────
-`
-		msg += `│     「 *${await Fancy(command.toUpperCase(), 32)}* 」 `
-		msg += `╰─────────────\n`
+                         │╭─────────────\n`
+		msg += ` ││     「 *${await Fancy(command.toUpperCase(), 32)}* 」\n\n `
+		msg += ` │╰─────────────\n`
 		for (const plugin of commandslist[command])
-			msg += `│ ⿻ │ ${await Fancy(plugin.toLowerCase(), 32)}\n`
-		msg += `│ ⿻ ╰─────────────\n`
-		msg += `╰─────────────◆`
+			msg += `││ ⿻ │ ${await Fancy(plugin.toLowerCase(), 32)}\n`
+		msg += `││ ⿻ ╰─────────────\n`
+		msg += `│╰─────────────◆\n`
 	}
 	var img = await parsedUrl(BOT_INFO)
 	if (img.length == 0) {
