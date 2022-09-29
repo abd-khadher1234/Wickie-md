@@ -48,15 +48,17 @@ Function({
 ┕━━━━━━━━━━━━━━━━━━━━━
 `
 	for (const command in commandslist) {
-		msg += `┍━━━━━━━━━━━━━━━━━━━━
+		msg += `╭───────────────◆
+│ ⿻ ╭─────────────
 `
 		msg += `│ 「 *${await Fancy(command.toUpperCase(), 32)}* 」 `
-		msg += `┕┬━━━━━━━━━━━━━━━━━━━━\n┌┤\n`
+		msg += `│ ⿻ ╰─────────────\n┌┤\n`
 		for (const plugin of commandslist[command])
-			msg += `││•=• ${await Fancy(plugin.toLowerCase(), 32)}\n`
-		msg += `│┕━━━━━━━━━━━━━━━━━━━━━
+			msg += `│ ⿻ │ ${await Fancy(plugin.toLowerCase(), 32)}\n`
+		msg += `│ ⿻ ╰─────────────\
 `
-		msg += `┕━━━━━━━━━━━━━━━━━━━━━
+		msg += `│ ⿻ ╰─────────────
+╰─────────────◆
 `
 	}
 	var img = await parsedUrl(BOT_INFO)
@@ -82,6 +84,13 @@ Function({
 				buttonId: prefix + 'khadher',
 				buttonText: {
 					displayText: 'owner'
+				},
+				type: 1
+			},
+                        {
+				buttonId: prefix + 'alive',
+				buttonText: {
+					displayText: 'alive'
 				},
 				type: 1
 			}
