@@ -47,16 +47,16 @@ Function({
 │ ⿻ │Owner : ${BOT_INFO.split(";")[1]}
 │ ⿻ │Mode : ${MODE}
 │ ⿻ │commands : ${commands.length}
-│ ⿻ ╰─────────────
-╰─────────────◆\n\n`
+│ ⿻ ╰────────────────────
+╰───────────────────◆\n\n`
 	for (const command in commandslist) {
-		msg += `╭─────────────\n`
-		msg += `││     「 *${await Fancy(command.toUpperCase(), 32)}* 」\n\n`
-		msg += `│╰─────────────\n`
+		msg += `╭────────────────────\n`
+		msg += `││     「 *${await Fancy(command.toUpperCase(), 32)}* 」`
+		msg += `│╰────────────────────\n`
 		for (const plugin of commandslist[command])
 			msg += `││ ⿻ │ ${await Fancy(plugin.toLowerCase(), 32)}\n`
 		msg += `││ ⿻ ╰─────────────\n`
-		msg += `╰─────────────◆\n`
+		msg += `╰────────────────────◆\n`
 	}
 	var img = await parsedUrl(BOT_INFO)
 	if (img.length == 0) {
