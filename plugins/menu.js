@@ -41,7 +41,7 @@ Function({
 			commandslist[command.type].push((match.length >= 3 ? (HANDLER + mmatch) : command.pattern).trim())
 		}
 	})
-	let msg = `╭─────〘 ${BOT_INFO.split(";")[0]} 〙────◆
+	let msg = `╭─────〘 ${BOT_INFO.split(";")[0]} 〙──◆
 │ ⿻ ╭─────────────
 │ ⿻ │User : ${m.pushName}
 │ ⿻ │Owner : ${BOT_INFO.split(";")[1]}
