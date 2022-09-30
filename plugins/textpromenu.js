@@ -8,7 +8,7 @@ Function (
 		type: 'textpro',
 	},async (message, match) => { 
 let msg = '```'
-await message.send(msg +````═════════════════════════════
+await message.send(msg +` ```═════════════════════════════
 ⓣⓔⓧⓣⓟⓡⓞ ⓜⓔⓝⓤ ⓒⓞⓜⓜⓐⓝⓢ
 ═════════════════════════════
 
