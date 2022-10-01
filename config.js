@@ -5,6 +5,7 @@ if (fs.existsSync('config.env')) require('dotenv').config({ path: './config.env'
 function convertToBool(text, fault = 'true') {
     return text === fault ? true : false;
 }
+
 const toBool = (x) => x == 'true'
 global.apikey = {'https://hermit-network.herokuapp.com': 'free'}
 global.apiUrl = 'https://hermit-network.herokuapp.com/'
@@ -28,7 +29,7 @@ module.exports = {
     AUTOUNMUTE_MSG: process.env.AUTOUNMUTE_MSG || '_Group autounmuted!_\n_(Change this by setting var AUTOUNMUTE_MSG)_',
     BOT_INFO: process.env.BOT_INFO || '𝛨𝛯𝑅𝛭𝛪𝑇;𝛥𝐷𝛪𝑇𝛨𝑌𝛥𝛮;972528277755;https://i.imgur.com/6oRG106.jpeg',
     AUDIO_DATA: process.env.AUDIO_DATA === undefined ? '𝛨𝛯𝑅𝛭𝛪𝑇;𝛥𝐷𝛪𝑇𝛨𝑌𝛥𝛮;https://i.imgur.com/fj2WE83.jpeg' : process.env.AUDIO_DATA,
-    STICKER_DATA: process.env.STICKER_DATA === undefined ? '𝛨𝛯𝑅𝛭𝛪𝑇;𝛥𝐷𝛪𝑇𝛨𝑌𝛥𝛮' : process.env.AUDIO_DATA,
+    STICKER_DATA: process.env.STICKER_DATA === undefined ? '𝛨𝛯𝑅𝛭𝛪𝑇;𝛥𝐷𝛪𝑇𝛨𝑌𝛥𝛮' : process.env.STICKER_DATA,
     ERROR_MESSAGE: toBool(process.env.ERROR_MESSAGE), 
     WARN: process.env.WARN || '4',
     HEROKU: {
@@ -44,5 +45,3 @@ module.exports = {
        SUDO: process.env.SUDO || '972528277755,0',
        DEBUG: DEBUG
 };
-
-
