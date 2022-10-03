@@ -83,7 +83,8 @@ Function({
 					displayText: 'ALIVE🎀'
 				},
 				type: 1
-			}
+			},
+                        {urlButton: {displayText: 'Contact Owner', url: `https://chat.whatsapp.com/J2s0xRg4kZJ3ep0AncmbTJ`}}
 		]
 	}
 	await message.client.sendMessage(message.chat, buttonMessage)
