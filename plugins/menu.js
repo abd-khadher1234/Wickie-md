@@ -77,14 +77,7 @@ Function({
 				},
 				type: 1
 			},
-			{
-				buttonId: prefix + 'khadher',
-				buttonText: {
-					displayText: 'OWNER🥀'
-				},
-				type: 1
-			},
-                        {
+		        {
 				buttonId: prefix + 'alive',
 				buttonText: {
 					displayText: 'ALIVE🎀'
