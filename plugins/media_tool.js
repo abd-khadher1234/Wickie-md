@@ -16,13 +16,14 @@ let media = await client.sendVideoAsSticker(m.chat, await m.reply_message.downlo
 await fs.unlinkSync(media)
 } else {return m.reply("_Reply to a photo or a short video!_")
 }})
-Function({pattern: 'mp3 ?(.*)', fromMe: isPublic, desc: 'Converts replied media to mp3 format', type: 'media'}, async (m, text, client) => {
+Function({pattern: 'mp3 ?(.*)', fromMe: isPublic, desc: 'Converts replied media to mp3 format', type: 'media'}, async (m, match, client) => {
 if (/document/.test(m.mine) || !/video/.test(m.mine) && !/audio/.test(m.mine) || !m.reply_message) return m.reply('_Reply to a video/audio_')
 let media = await m.reply_message.download()
-let image = await getBuffer(c.AUDIO_DATA.split(';')[2])
-let image_1 = await getBuffer('https://i.imgur.com/fj2WE83.jpeg')
-let tumb = image || image_1
-let writer = await addAudioMetaData(await toAudio(media, 'mp4'), tumb, c.AUDIO_DATA.split(';')[0], c.AUDIO_DATA.split(';')[1], 'Hermit Official')
+var [name, artist, url] = AUDIO_DATA == 'false' ? [] : AUDIO_DATA.split(/[,;]/)
+name = name || ''
+artist = artist || ''
+url = url || ''
+let writer = await addAudioMetaData(await toAudio(media), url, name, artist, 'Hermit Official')
 await client.sendMessage(m.chat, { audio: writer, mimetype: 'audio/mpeg' }, { quoted: m.data })
 })
 Function({pattern: 'take ?(.*)', fromMe: isPublic, desc: 'Change sticker or audio package name', type: 'media'}, async (message, match, client) => {
@@ -127,7 +128,7 @@ await fs.unlinkSync('vreverse.mp4')
 } else {return m.reply("_Reply to a photo or a short video!_")}
 })
 
-Function({pattern: 'pdf$', fromMe: isPublic, desc: 'Convert unlimited image to pdf', type: 'media'}, async (message, match, client) => {
+Function({pattern: 'pdf ?(.*)', fromMe: isPublic, desc: 'Convert unlimited image to pdf', type: 'media'}, async (message, match, client) => {
 if (!fs.existsSync("./media/pdf")) {
 fs.mkdirSync("./media/pdf")
 }
@@ -142,5 +143,6 @@ const files = fs.readdirSync('./media/pdf')
 if (files.length == 0) {
 return await message.send('*No image added*')
 }
-await message.send(await pdf(), 'document')
+const filename = match || 'File'
+await message.send(await pdf(), 'document', {fileName: filename})
 })
