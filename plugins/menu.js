@@ -35,7 +35,7 @@ Function({
 			if (/\[(\W*)\]/.test(PREFIX)) {
 				HANDLER = PREFIX.match(/\[(\W*)\]/)[1][0];
 			} else {
-				HANDLER = '.';
+				HANDLER = '🤌🏻';
 			}
 			if (!commandslist[command.type]) commandslist[command.type] = []
 			commandslist[command.type].push((match.length >= 3 ? (HANDLER + mmatch) : command.pattern).trim())
