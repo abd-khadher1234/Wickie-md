@@ -18,7 +18,7 @@ let buttons = [
 const buttonMessage = {
 image: {url: `${videos.all[0].image}` },
 caption: text,
-footer: `\n© abd_khadher \n`,
+footer: `\n©𝞓𝞑𝘿_𝞙𝞖𝞓𝘿𝞖𝞢𝞒 \n`,
 buttons: buttons,
 headerType: 1
 }
