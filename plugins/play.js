@@ -12,8 +12,8 @@ const text = `
 │🧿 Channel : ${videos.all[0].author.name}
 ┗──────━•\n\n`
 let buttons = [
-  {buttonId: `${prefix}song ${videos.all[0].url}`, buttonText: {displayText: '🎧 ᴀᴜᴅɪᴏ 🎧'}, type: 1},
-  {buttonId: `${prefix}video ${videos.all[0].url}`, buttonText: {displayText: '📽 ᴠɪᴅᴇᴏ 📽'}, type: 1},
+  {buttonId: `${prefix}yta ${videos.all[0].url}`, buttonText: {displayText: '🎧 ᴀᴜᴅɪᴏ 🎧'}, type: 1},
+  {buttonId: `${prefix}ytv ${videos.all[0].url}`, buttonText: {displayText: '📽 ᴠɪᴅᴇᴏ 📽'}, type: 1},
 ]
 const buttonMessage = {
 image: {url: `${videos.all[0].image}` },
