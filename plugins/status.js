@@ -8,7 +8,7 @@ const buttons = [
 const buttonMessage = {
     video: {url: mask},
     caption: "*Random Malayalam Status*",
-    footer: 'abd_khadher👀👅',
+    footer: '𝞓𝞑𝘿_𝞙𝞖𝞓𝘿𝞖𝞢𝞒',
     buttons: buttons,
     headerType: 4
 }
