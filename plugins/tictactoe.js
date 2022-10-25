@@ -1,5 +1,5 @@
-const { function, parseJid, isPrivate } = require("../lib/");
-function (
+const { Function, parseJid, isPrivate } = require("../lib/");
+Function (
   {
     pattern: "ttt ?(.*)",
     fromMe: isPrivate,
@@ -72,7 +72,7 @@ Current turn: @${room.game.currentTurn.split("@")[0]}
   }
 );
 
-function (
+Function (
   {
     on: "text",
     fromMe: isPrivate,
