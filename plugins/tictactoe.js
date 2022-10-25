@@ -72,7 +72,7 @@ Current turn: @${room.game.currentTurn.split("@")[0]}
   }
 );
 
-command(
+function (
   {
     on: "text",
     fromMe: isPrivate,
