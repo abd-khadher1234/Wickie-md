@@ -1,5 +1,5 @@
-const { command, parseJid, isPrivate } = require("../lib/");
-command(
+const { function , parseJid, isPrivate } = require("../lib/");
+function (
   {
     pattern: "ttt ?(.*)",
     fromMe: isPrivate,
