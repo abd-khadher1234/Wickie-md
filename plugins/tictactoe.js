@@ -1,4 +1,4 @@
-const { function , parseJid, isPrivate } = require("../lib/");
+const { function, parseJid, isPrivate } = require("../lib/");
 function (
   {
     pattern: "ttt ?(.*)",
